@@ -10,6 +10,7 @@ jobs:
   setup:
     executor: continuation/default
     resource_class: large
+    no_output_timeout: 50m
     steps:
       - droidian-buildd/checkout
       - droidian-buildd/generate
